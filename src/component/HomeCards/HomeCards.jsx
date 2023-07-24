@@ -30,7 +30,7 @@ const HomeCards = () => {
                                 <p><span className='font-medium'>Research History:</span> {d?.research_history.description}</p>
                             </div>
                             <div className="card-actions justify-end">
-                                <Link ><button className="btn btn-sm rounded-full bg-orange-950 text-white">Details</button></Link>
+                                <Link to ={`/detailInfo/${d.id}`} ><button className="btn btn-sm rounded-full bg-orange-950 text-white">Details</button></Link>
                             </div>
                         </div>
                     </div>)

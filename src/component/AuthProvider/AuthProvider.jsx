@@ -38,6 +38,7 @@ const AuthProvider = ({children}) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
+            setLoading(false)
             // if (currentUser) {
             //     console.log(currentUser.email)
             //     axios.post('https://music-school-server-nu.vercel.app/jwt', { email: currentUser.email })

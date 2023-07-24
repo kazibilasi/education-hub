@@ -1,9 +1,10 @@
+
 import React, { useEffect, useState } from 'react';
 
 const MyCollege = () => {
     const [colleges, setColleges] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/student-info')
+        fetch('https://education-hub-zeta.vercel.app/student-info')
             .then(res => res.json())
             .then(data => {
 
@@ -40,6 +41,10 @@ const MyCollege = () => {
                                         <p className='mt-2'><span className='font-medium '>Sports: </span>{c.college.sports[0]}, {c.college.sports[1]}, {c.college.sports[2]}</p>
                                         <p className='mt-2'><span className='font-medium '>Admission Date: </span>{c.college.admission_date}</p>
                                         <p className='mt-2'><span className='font-medium '>Rating: </span>{c.college.rating}</p>
+
+                                        <p>
+                                            
+                                        </p>
                                     </div>
 
 

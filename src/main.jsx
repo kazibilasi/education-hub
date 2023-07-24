@@ -17,6 +17,7 @@ import AuthProvider from './component/AuthProvider/AuthProvider';
 import Login from './component/Login/Login';
 import Register from './component/Register/Register';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
+import DetailInfo from './component/DetailInfo/DetailInfo';
 
 
 
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/detailInfo/:id",
+        element:<DetailInfo></DetailInfo>
       },
 
     ]

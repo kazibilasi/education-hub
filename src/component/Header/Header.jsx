@@ -12,12 +12,12 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Header = () => {
     return (
-        <div className='lg:h-[800px] h-[200px] relative ' >
-            <div className="form-control w-full max-w-xs z-20 absolute ">
+        <div className='lg:h-[800px] h-[200px]' >
+            {/* <div className="form-control w-full max-w-xs z-20 absolute ">
 
                 <input type="text" placeholder="search college" name='name' className="input bg-transparent input-bordered w-full max-w-xs" />
 
-            </div>
+            </div> */}
 
             <Swiper
                 spaceBetween={30}
